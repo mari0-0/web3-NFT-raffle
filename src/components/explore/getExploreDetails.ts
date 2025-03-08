@@ -1,6 +1,5 @@
 import { ethers } from "ethers";
 import { 
-	RAFFLE_CONTRACT_ABI, 
 	FACTORY_CONTRACT_ADDRESS, 
 	FACTORY_CONTRACT_ABI 
 } from "../../contracts";

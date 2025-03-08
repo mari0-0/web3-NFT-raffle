@@ -6,7 +6,6 @@ import {
 	Stack,
 	Progress,
 	Text,
-	Center,
 	Box,
 } from "@chakra-ui/react";
 import { useLocation, useParams } from "react-router-dom";
@@ -22,12 +21,12 @@ import CopyButton from "./CopyButton";
 import profilePic from "../assets/images/hero-nft1.png";
 import { SiEthereum } from "react-icons/si";
 import ChangeTicketPrice from "./ChangeTicketPrice";
-import { MediaRenderer, useActiveAccount, useWalletInfo } from "thirdweb/react";
+import { MediaRenderer, useActiveAccount } from "thirdweb/react";
 import NFTDetailsSkeleton from "./NFTDetailsSkeleton";
 
-const getIpfsGatewayUrl = (ipfsUrl: string): string => {
-	return ipfsUrl.replace("ipfs://", "https://ipfs.io/ipfs/");
-};
+// const getIpfsGatewayUrl = (ipfsUrl: string): string => {
+// 	return ipfsUrl.replace("ipfs://", "https://ipfs.io/ipfs/");
+// };
 
 function truncateAddress(address: string): string {
 	if (address.length <= 10) {

@@ -16,7 +16,7 @@ import { getContract, prepareContractCall, resolveMethod } from "thirdweb";
 import { optimismSepolia } from "thirdweb/chains";
 import client from "../client";
 import { useActiveAccount, useSendAndConfirmTransaction } from "thirdweb/react";
-import { Navigate, redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 interface Props {
 	raffleDetails: {

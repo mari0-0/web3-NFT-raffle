@@ -9,14 +9,13 @@ import {
   Center,
   HStack,
   Heading,
-  Image,
   Stack,
   Text,
   useToast,
 } from "@chakra-ui/react";
 import CopyButton from "./CopyButton";
 import CreateNFTRaffleButton from "./CreateNFTRaffleButton";
-import { getContract, prepareContractCall, resolveMethod } from "thirdweb";
+import { getContract, prepareContractCall } from "thirdweb";
 import client from "../client";
 import { optimismSepolia } from "thirdweb/chains";
 import { MediaRenderer, useSendAndConfirmTransaction } from "thirdweb/react";

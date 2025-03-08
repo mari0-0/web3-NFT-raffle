@@ -13,7 +13,7 @@ import {
 import { PiCopySimpleLight } from 'react-icons/pi';
 
 const CopyButton: React.FC<{ address: string }> = ({ address }) => {
-  const { hasCopied, onCopy } = useClipboard(address);
+  const { onCopy } = useClipboard(address);
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
 

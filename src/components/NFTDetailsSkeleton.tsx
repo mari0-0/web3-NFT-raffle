@@ -4,7 +4,6 @@ import {
   Image,
   Heading,
   Stack,
-  Progress,
   Text,
   Box,
   Input,
@@ -13,9 +12,6 @@ import {
   Skeleton,
   SkeletonCircle,
 } from "@chakra-ui/react";
-import { IoTicketOutline } from "react-icons/io5";
-import profilePic from "../assets/images/hero-nft1.png";
-import { SiEthereum } from "react-icons/si";
 
 const NFTDetailsSkeleton: React.FC = () => {
   return (

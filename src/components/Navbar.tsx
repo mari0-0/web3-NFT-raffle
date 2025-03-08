@@ -13,7 +13,6 @@ import {
 	optimismSepolia,
 	sepolia,
 } from "thirdweb/chains";
-import { useEffect } from "react";
 
 const wallets = [
 	createWallet("io.metamask"),
@@ -52,27 +51,27 @@ const Navbar: React.FC = () => {
 					<Link to="/">
 						<Button variant={"nav"} p="0">
 							<Heading
-								sx={{ borderRight: "1px solid #718096", paddingRight: "20px" }}
+								// sx={{ borderRight: "1px solid #718096", paddingRight: "20px" }}
 								as={"h2"}
 							>
 								Xaffle.
 							</Heading>
 						</Button>
 					</Link>
-					<Link to={"/explore"}>
+					{/* <Link to={"/explore"}>
 						<Button variant="nav">Eplore</Button>
 					</Link>
 					<Link to={"/collections"}>
 						<Button variant="nav">Collections</Button>
-					</Link>
+					</Link> */}
 				</HStack>
 
 				<Flex>
 					{activeAccount?.address && (
 						<>
-							<Link to={"/activity"} style={{ alignSelf: "center" }}>
+							{/* <Link to={"/activity"} style={{ alignSelf: "center" }}>
 								<Button variant="nav">Activity</Button>
-							</Link>
+							</Link> */}
 							<Link to="/account" style={{ alignSelf: "center" }}>
 								<Button mr="20px" variant={"nav"}>
 									Account

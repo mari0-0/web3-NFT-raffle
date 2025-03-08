@@ -6,7 +6,6 @@ import {
 	Image,
 	Text,
 	Center,
-	Skeleton,
 } from "@chakra-ui/react";
 import { Alchemy, Network } from "alchemy-sdk";
 import {
